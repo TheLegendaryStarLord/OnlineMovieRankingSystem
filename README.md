@@ -69,8 +69,7 @@ TMDB_API_KEY=your_tmdb_key
 Build (or rebuild) the database from the project root:
  
 ```bash
-mysql -u root -p < db/schema.sql
-mysql -u root -p < db/seed.sql
+mysql -u root < database/setup.sql
 ```
  
  ### Tables
