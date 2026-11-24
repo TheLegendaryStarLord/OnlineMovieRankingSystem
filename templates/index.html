@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
+    <title>MovieOpinions</title>
+    <link href="../static/output.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Header testing!</h1>
+
+<body class="bg-slate-500 bg-gradient-to-r from-black/65">
+    <header
+        class="site-container flex justify-between items-center bg-green-500 px-4 py-6 text-white border-b-3 border-green-300">
+        <h1 class="text-2xl font-bold">MovieMinds</h1>
+        <h2 class="font-semibold">"What did you think of the movie?"</h2>
+    </header>
+
+    <div class="flex h-screen justify-center items-center max-h-1/2">
+        <div class="container max-w-1/2 bg-white items-center border-3 border-slate-300 rounded-full">
+            <form action="{{ url_for("title")}}" method="post">
+                <input class="m-4 text-lg" type="text" name="title" placeholder="Search...">
+            </form>
+        </div>
+    </div>
 </body>
+
+
 </html>
