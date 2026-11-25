@@ -6,6 +6,14 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/SignUp')
+def SignUp():
+    return render_template('SignUp.html')
+
+@app.route('/SignIn')
+def SignIn():
+    return render_template('SignIn.html')
+
 @app.route('/title', methods=["GET","POST"])
 def title():
     if request.method == "POST":
