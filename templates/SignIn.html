@@ -14,8 +14,8 @@
         class="site-container grid grid-cols-3 justify-between items-center bg-gray-900 px-3 py-4 text-purple-800 border-b-3 border-purple-900">
         <div>
             <a href="/">
-            <h1 class="text-xl font-bold">MovieMinds</h1>
-            <i class="text-sm font-semibold">"What did you think of the movie?"</i>
+                <h1 class="text-xl font-bold">MovieMinds</h1>
+                <i class="text-sm font-semibold">"What did you think of the movie?"</i>
             </a>
         </div>
         <div
@@ -26,7 +26,7 @@
                     <i class="row-start-2 col-start-2 font-semibold">Sign Up</i>
                 </button>
             </a>
-            <a href="/SignUp" class="w-full rounded-l-full">
+            <a href="/SignIn" class="w-full rounded-l-full">
                 <button type="button"
                     class="cols-start-2 cursor-pointer bg-purple-400 hover:bg-purple-900 rounded-r-full w-full h-full">
                     <i class="row-start-2 col-start-2 font-semibold">Sign In</i>
@@ -34,6 +34,17 @@
             </a>
         </div>
     </header>
+
+    <form action="{{ url_for("login")}}" method="post" class="grid grid-flow-col gap-1 rounded-full bg-gray-900 border border-2 border-gray-800">
+        <input class="text-lg w-full h-full rounded-l-full bg-slate-100 px-4" type="text" name="loginEmail"
+            placeholder="Email@email.com">
+        <input class="text-lg w-full h-full rounded-l-full bg-slate-100 px-4" type="text" name="loginPassword"
+            placeholder="password">
+        <button type="submit"
+            class="cursor-pointer bg-slate-300 hover:bg-slate-400 grid grid-cols-3 grid-row-3 rounded-r-full"
+            id="submitButton"><i class="fa fa-search row-start-2 col-start-2"></i></button>
+    </form>
+
 </body>
 
 </html>

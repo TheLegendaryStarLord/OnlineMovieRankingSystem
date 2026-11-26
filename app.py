@@ -20,5 +20,12 @@ def title():
         movieSearchQuery = request.form.get("title")
         return f"you requested {movieSearchQuery}"
 
+@app.route('/login', methods=["GET","POST"])
+def login():
+    if request.method == "POST":
+        loginEmail = request.form.get("loginEmail")
+        loginPassword = request.form.get("loginPassword")
+        return f"Login Info {loginEmail} {loginPassword}"
+
 if __name__ == '__main__':
     app.run(debug=True)
