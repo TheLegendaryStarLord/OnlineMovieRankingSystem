@@ -36,28 +36,31 @@
     </header>
 
     <div class="flex h-screen items-center justify-center">
-        <div class="bg-gray-900 border border-3 rounded border-gray-900 w-1/3 h-1/2 text-center">
+        <div class="bg-gray-900 border-double border-3 border-purple-900 w-1/3 h-1/2 text-center rounded-lg">
 
             <form action="{{ url_for("login")}}" method="post"
                 class=" text-purple-900 font-semibold grid grid-cols-1 h-full justify-center items-center">
 
-                <div class="w-3/4">
+                <div class="grid grid-rows-flow justify-center items-center gap-4">
                     <label for="login-email" class="block text-xl">Email address</label>
                     <input class="shadow text-lg w-full rounded-full bg-slate-100 py-2 px-3" type="text"
                         name="loginEmail" placeholder="Email@email.com">
                 </div>
 
-                <div class="w-3/4">
+                <div class="grid grid-rows-flow justify-center items-center gap-4">
                     <label for="login-password" class="block text-xl">Password</label>
                     <input class="shadow text-lg w-full rounded-full bg-slate-100 py-2 px-3" type="text"
                         name="loginPassword" placeholder="Password">
                 </div>
 
+                <div class="flex items-center justify-center">
                 <button type="submit"
-                    class="cursor-pointer my-4 content-center bg-slate-300 hover:bg-slate-400 grid grid-cols-3 grid-row-3 rounded-full"
-                    id="submitButton"><i class="fa fa-user row-start-2 col-start-2 font-semibold"> Sign
+                    class="cursor-pointer bg-purple-300 hover:bg-purple-500 p-4 rounded-md"
+                    id="submitButton"><i class="fa fa-user"></i><i class="font-bold"> Sign
                         Up</i>
                 </button>
+                </div>
+                
 
             </form>
 
