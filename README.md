@@ -35,6 +35,10 @@ OnlineMovieRankingSystem/
 | Backend | `dao/`, `services/`, `routes/`, `db/`, `app.py`, `config.py` |
 
 ## Setup
+
+css was installed following this tutorial to add tailwind to html
+    https://www.geeksforgeeks.org/css/tailwind-css/
+    
  
 ```bash
 # 1. Clone the repo and enter it
